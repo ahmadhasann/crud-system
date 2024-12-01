@@ -1,0 +1,53 @@
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main class=" py-5 position-relative">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="py-2 mb-5 text-center   header">Bookmarker</h1>
+            <div class=" w-100 Bookmark-body py-2 ">
+                
+                <h2 class="py-3 text-center">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name">
+                    <label for="nameInput  " class=" fw-bolder   form-label">
+                        <i class=" fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                    <input type="text" class=" mb-4 form-control" id="nameInput" placeholder="Bookmark Name">
+                </div>
+                <div class="site-url">
+                    <label for="urlInput" class=" fw-bolder form-label">
+                        <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                    <input type="text" class=" mb-4 form-control" id="urlInput" placeholder="Website Url">
+                </div>
+                <button onclick="addproduct()"   type="button"  class="btn btn-submit px-5 mb-3" id="submitBtn" >Submit</button>
+            </div>  
+            <div id="data" class="W-100">
+                
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
